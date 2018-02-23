@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="132px" viewBox="0 0 111 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page-PC" transform="translate(-391.000000, -2254.000000)">
+            <g id="Group-2" transform="translate(-1.000000, 2186.000000)">
+                <g id="Group" transform="translate(386.000000, 70.000000)">
+                    <g id="1" transform="translate(8.000000, 0.000000)">
+                        <text id="icon201---themify" font-family="themify" font-size="36" font-weight="normal" letter-spacing="-0.0692307651" fill="#FFFFFF">
+                            <tspan x="36" y="65"></tspan>
+                        </text>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2.5" cx="53.5" cy="53.5" r="53.5"></circle>
+                        <circle id="Oval-2" stroke="#FFFFFF" stroke-width="2.5" fill="#7CB342" cx="53.5" cy="106.5" r="21.5"></circle>
+                        <text font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" letter-spacing="-0.04615385" fill="#FFFFFF">
+                            <tspan x="47" y="116">1</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Roboto-Italic;
+  src: url("../font/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../font/Roboto-Light.ttf");
+}
+
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../font/Roboto-Regular.ttf");
+}
+
+$green : #8BC34A;
+$black : #283238;
+$white : #FFFFFF;
+$fontItalic : Roboto-Italic;
+$fontNormal : Roboto-Regular;
+$fontLight : Roboto-Light;

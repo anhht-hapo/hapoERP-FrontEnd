@@ -1,0 +1,472 @@
+@import "variables";
+
+/* Reset style default */
+p {
+  &:last-child {
+    margin: 0;
+  }
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Extend */
+%clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%transition {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+@mixin translate($translateX, $translateY) {
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+  transform: translate($translateX, $translateY);
+}
+
+@mixin scale($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+}
+
+@mixin skew($skew) {
+  -webkit-transform: skew($skew);
+  -moz-transform: skew($skew);
+  -ms-transform: skew($skew);
+  -o-transform: skew($skew);
+  transform: skew($skew);
+}
+
+@mixin rotate($rotate) {
+  transform: rotate($rotate);
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+}
+
+/* Font icon css */
+%fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+%themify {
+  display: inline-block;
+  font-family: 'themify';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+body {
+  font-family: $fontNormal;
+  text-align: justify;
+  font-size: 13px;
+  color: $black;
+  margin: 0px;
+}
+
+section {
+  margin: 0px;
+
+}
+
+a {
+  color: $black;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.picture {
+  img {
+    width: 100%;
+  }
+}
+
+.slick-slide {
+  outline: none;
+  height: auto;
+}
+.title {
+  h2 {
+    color: #444444;
+    font-size: 48px;
+    font-family: $fontNormal;
+    line-height: 63px;
+  }
+  [class^="ti-"] {
+    color: #444444;
+    font-size: 36px;
+  }
+}
+
+.abstract {
+  padding: 15px 0px 25px 0px;
+  font-family: $fontItalic;
+  font-size: 14px;
+}
+
+.content {
+  padding: 2px 0px 30px 0px;
+  line-height: 24px;
+  font-size: 13px;
+  .todo {
+    margin-bottom: 17px;
+    height: 50px;
+    width: 100%;
+    div:first-child {
+      width: 7%;
+      float: left;
+      i {
+        font-size: 18px;
+        color: $green;
+        line-height: 24px;
+      }
+    }
+    div:last-child {
+      width: 93%;
+      float: left;
+    }
+  }
+}
+
+
+.heading {
+  background-image: url("../images/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .login {
+    font-size: 12px;
+    padding-top: 41px;
+    float: right;
+    .sign-in {
+      border: 2px solid $green;
+      border-radius: 100px;
+      color: $green;
+      padding: 10px 18px;
+      margin-left: 23px;
+    }
+  }
+  .hapo-container {
+    padding: 200px 126px 233px 126px;
+    text-align: center;
+    clear: both;
+    .icon-container {
+      padding-top: 55px;
+      .icon
+      {
+        width: 33.33%;
+        color: $black;
+        float: left;
+        [class^="ti-"] {
+          font-size: 48px;
+        }
+        p {
+          font-size: 36px;
+          margin-top: 15px;
+        }
+      }
+    }
+    >p {
+      font-size: 18px;
+      font-family: $fontItalic;
+      margin-top: 160px;
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+.features {
+  padding: 70px 0px;
+  background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
+  .container {
+    padding: 0px;
+  }
+  .feature-container
+  {
+    color: $white;
+    text-align: center;
+    .feature {
+      width: 200px;
+      >p {
+        margin: auto;
+        margin-top: 32px;
+        width: 110px;
+        font-size: 18px;
+      }
+      .logo {
+        margin: auto;
+        border: 2.5px solid $white;
+        border-radius: 100%;
+        box-sizing: border-box;
+        height: 110px;
+        width: 110px;
+        position: relative;
+        padding: auto;
+        i {
+          top: 35px;
+          left: 35px;
+          position: absolute;
+          font-size: 35px;
+        }
+
+      }
+      .number {
+        padding: auto;
+        top: 85px;
+        left: 33px;
+        position: absolute;
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        border: 2.5px solid $white;
+        background-color: #7CB342;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.customers {
+  h2 {
+    font-size: 48px;
+    padding: 50px 0px;
+    color: $white;
+  }
+  color: $white;
+  background-image: url("../images/Rectangle_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  .slider-for {
+    height: 100px;
+    overflow: visible;
+    .item {
+      text-align: justify;
+      position: relative;
+      i {
+        &:first-child {
+          position: absolute;
+          left: -27px;
+          top: -10px;
+        }
+        &:last-child {
+          position: absolute;
+          right: 27px;
+          bottom: 10px;
+        }
+      }
+    }
+    font-size: 14px;
+
+  }
+  .slider-nav {
+    .item {
+      width: 140px;
+      height: 150px;
+      padding-top: 10px;
+      img {
+        margin: auto;
+        height: 80px;
+        width: 80px;
+        &:hover {
+          height: 100px;
+          width: 100px;
+          margin-top: -10px;
+        }
+      }
+      p{
+        &:first-child {
+          font-size: 14px;
+          margin-bottom: 0px;
+          margin-top: 18px;
+        }
+        &:last-child {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.button-start {
+  border-radius: 100px;
+  background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+  color: $white;
+  font-size: 18px;
+  padding: 18px 50px;
+  transition: all 10s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: background 2s ease-out;
+  -moz-transition: background 2s ease-out;
+  -o-transition: background 2s ease-out;
+  transition: background 2s ease-out;
+  &:hover {
+    background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
+    cursor: pointer;
+  }
+}
+footer  {
+  clear: both;
+  border: 1px solid #ECEFF1;
+  background-color: #39474E;
+  box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
+  padding: 50px 0px;
+
+  .single-widget {
+    text-align: left;
+    ul {
+      margin-top: 18px;
+    }
+    h2 {
+      color: $green;
+      font-size: 13px;
+    }
+    a {
+      color: #D0D8DC;
+      font-size: 10px;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  .single-widget-main {
+    img {
+      width: 96px;
+    }
+    ul {
+      margin-top: 25px;
+    }
+  }
+  .single-icon {
+    padding-top: 50px;
+    ul {
+      width: 100%;
+      li {
+        margin-right: 15px;
+        width: 25%;
+        a {
+          font-size: 13px;
+          color: $green;
+        }
+        display: inline;
+      }
+    }
+  }
+}
+
+.today {
+  box-shadow: 0 15px 35px 0 rgba(0,0,0,0.1);
+}
+
+.customer-info {
+  clear: both;
+  box-shadow: 0 15px 35px 0 rgba(0,0,0,0.5);
+}
+
+[class^="col-lg-6"] {
+  padding: 100px 15px;
+}
+.customer-comment {
+  position: relative;
+  font-size: 18px;
+  font-family: $fontLight;
+  text-align: justify;
+  padding: 60px 0px;
+  .open-quote-icon {
+    opacity: 0.4;
+    font-size: 72px;
+    position: absolute;
+    top: -53px;
+    left: -100px;
+  }
+  .close-quote-icon {
+    opacity: 0.4;
+    font-size: 72px;
+    position: absolute;
+    bottom: -53px;
+    right: -100px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.slick-dots li {
+  height: 11px;
+  width: 11px;
+  box-sizing: border-box;
+  border: 1px solid #979797;
+  border-radius: 50%;
+  margin: 0 11px;
+}
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots .slick-active {
+  background-color: #D8D8D8;
+}
+
+@import "responsive";
